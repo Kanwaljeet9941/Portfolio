@@ -52,16 +52,18 @@ export default function About() {
         <div className="resume__container grid">
           <div className="resume__data">
             {resume.map((val) => {
-              if (val.category === "experience") {
-                return <ResumeItem key={val.id} {...val} />;
-              }
+              // if (val.category === "experience") {
+              //   return <ResumeItem key={val.id} {...val} />;
+              // }
+              return val.category === "experience" && <ResumeItem key={val.id} {...val} />
             })}
           </div>
           <div className="resume__data">
             {resume.map((val) => {
-              if (val.category === "education") {
-                return <ResumeItem key={val.id} {...val} />;
-              }
+              // if (val.category === "education") {
+              //   return <ResumeItem key={val.id} {...val} />;
+              // }
+              return val.category === "education" && <ResumeItem key={val.id} {...val} />
             })}
           </div>
         </div>
