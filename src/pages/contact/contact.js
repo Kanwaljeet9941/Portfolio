@@ -2,11 +2,11 @@ import React from "react";
 import {
   FaEnvelopeOpen,
   FaSquarePhone,
-  FaFacebookF,
-  FaXTwitter,
-  FaYoutube,
-  FaDribbble,
+  FaLinkedin,
+  FaGithub,
+  FaCodepen,
 } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 import { FiSend } from "react-icons/fi";
 import "./contact.css";
 export default function Contact() {
@@ -41,17 +41,33 @@ export default function Contact() {
           </div>
 
           <div className="contact__socials">
-            <a href="https://facebook.com" className="contact__social-link">
-              <FaFacebookF />
+            <a
+              href="https://www.linkedin.com/in/kanwaljeet-rathore-6b039625a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BY2hatFOWQlGhTcVKm9U%2Bug%3D%3D"
+              className="contact__social-link"
+              target="blank"
+            >
+              <FaLinkedin />
             </a>
-            <a href="https://twitter.com" className="contact__social-link">
-              <FaXTwitter />
+            <a
+              href="https://github.com/Kanwaljeet9941"
+              className="contact__social-link"
+              target="blank"
+            >
+              <FaGithub />
             </a>
-            <a href="https://youtube.com" className="contact__social-link">
-              <FaYoutube />
+            <a
+              href="https://codepen.io/Kanwaljeet9941"
+              className="contact__social-link"
+              target="blank"
+            >
+              <FaCodepen />
             </a>
-            <a href="https://dribble.com" className="contact__social-link">
-              <FaDribbble />
+            <a
+              href="https://leetcode.com/u/Kanwaljeet9797/"
+              className="contact__social-link"
+              target="blank"
+            >
+              <SiLeetcode/>
             </a>
           </div>
         </div>
