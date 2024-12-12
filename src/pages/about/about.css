@@ -168,3 +168,41 @@
   font-size: var(--smaller-font-size);
   line-height: 1.6;
 }
+
+@media (max-width: 840px) {
+  .section {
+    width: 100%;
+  }
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__subtitle {
+    margin-bottom: 50px;
+  }
+
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .resume__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .stats__box {
+    border: 1px solid var(--border-color);
+    padding: 10px 20px 15px;
+    border-radius: 5px;
+  }
+
+  .stats__no {
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    line-height: 1.2;
+  }
+}

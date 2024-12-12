@@ -56,3 +56,38 @@
   left: -83%;
   transform: rotate(-15deg);
 }
+
+@media (max-width: 840px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .color__block {
+    /* display: none; */
+    height: 100%;
+    width: 200%;
+    transform: rotate(-15deg);
+    top: -70%;
+  }
+
+  .home__img {
+    width: 200%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .color__block {
+    transform: rotate(-10deg);
+    top: -80%;
+  }
+  .home__title {
+    font-size: var(--h2-font-size);
+  }
+  .home__description {
+    font-size: var(--small-font-size);
+  }
+}

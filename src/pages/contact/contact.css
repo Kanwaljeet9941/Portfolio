@@ -94,3 +94,17 @@
   font-size: var(--h3-font-size);
   line-height: 64px;
 }
+
+@media (max-width: 840px) {
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 490px) {
+  .form__input-group {
+    display: flex;
+    flex-direction: column;
+  }
+}

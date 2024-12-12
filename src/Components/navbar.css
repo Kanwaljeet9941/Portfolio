@@ -75,7 +75,7 @@
   transition: all 0.2s ease;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1150px) {
   .nav__menu {
     all: unset;
   }

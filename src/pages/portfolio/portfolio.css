@@ -46,7 +46,7 @@
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 10;
+  z-index: 100;
   display: grid;
   place-items: center;
   padding: 15px;
@@ -94,6 +94,7 @@
   display: flex;
   align-items: center;
   column-gap: 8px;
+  text-size-adjust: initial;
 }
 
 .item__icon {
@@ -108,4 +109,57 @@
 
 .item__details {
   font-weight: var(--weight-600);
+}
+
+@media (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio__modal-content {
+    max-width: 550px;
+  }
+
+  .item__title,
+  .item__details {
+    font-size: 12px;
+    color: var(--title-color);
+  }
+
+  .modal__close {
+    position: absolute;
+    top: 3.5%;
+    right: 3.5%;
+    width: 50px;
+    height: 50px;
+    filter: invert(0.8);
+  }
+}
+
+@media (max-width: 640px) {
+  .modal__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 490px) {
+  .portfolio__modal-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+  }
+
+  .modal__item div {
+    max-width: 100%;
+  }
+
+  .item__details {
+    word-wrap: break-word;
+  }
+  .portfolio__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
