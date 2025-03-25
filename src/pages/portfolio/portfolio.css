@@ -101,6 +101,10 @@
   display: flex;
 }
 
+.item__title {
+  text-decoration: none;
+}
+
 .item__title,
 .item__details {
   font-size: var(--small-font-size);

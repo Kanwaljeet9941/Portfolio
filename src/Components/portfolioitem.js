@@ -29,8 +29,9 @@ export default function PortfolioItem({ img, title, details }) {
                   <li className="modal__item" key={index}>
                     <span className="modal__icon">{icon}</span>
                     <div>
-                      <span className="item__title">{title}</span>
-                      <span className="item__details">{desc}</span>
+                      <a className="item__title" href={desc}>
+                        {title}
+                      </a>
                     </div>
                   </li>
                 );

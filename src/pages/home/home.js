@@ -12,13 +12,12 @@ export default function Home() {
       <div className="home__content">
         <div className="home__data">
           <h1 className="home__title">
-            <span>I'm Kanwaljeet. </span>Web Designer
+            <span>I'm Kanwaljeet. </span>Full Stack Developer
           </h1>
           <p className="home__description">
-            I am a React based web designer & front end developer focusing on
-            crafting clean & user-friendly experiences, I am passionate about
-            building excellent software that improves the live of those around
-            me.
+            I am a MERN based web developer focusing on crafting clean &
+            user-friendly experiences, I am passionate about building excellent
+            software that improves the live of those around me.
           </p>
           <Link to="/about" className="button">
             More About Me{" "}
