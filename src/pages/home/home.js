@@ -20,7 +20,7 @@ export default function Home() {
             software that improves the live of those around me.
           </p>
           <Link to="/about" className="button">
-            More About Me{" "}
+            More About Me
             <span className="button__icon">
               <FaArrowRight />
             </span>
